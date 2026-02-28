@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
-        /* ===== CSS RESET & GLOBAL ===== */
         * {
             margin: 0;
             padding: 0;
@@ -35,7 +34,6 @@
             direction: rtl;
         }
 
-        /* ===== MATRIX BACKGROUND ===== */
         .matrix-bg {
             position: fixed;
             top: 0;
@@ -66,7 +64,6 @@
             100% { background-position: 50px 50px; }
         }
 
-        /* ===== TERMINAL HEADER ===== */
         .terminal-header {
             background: rgba(0, 0, 0, 0.9);
             border-bottom: 2px solid var(--matrix-green);
@@ -123,7 +120,6 @@
             50% { opacity: 0.3; }
         }
 
-        /* ===== NAVIGATION ===== */
         .cyber-nav {
             margin-top: 80px;
             padding: 0 30px;
@@ -181,14 +177,12 @@
             width: 100%;
         }
 
-        /* ===== MAIN CONTAINER ===== */
         .container {
             max-width: 1400px;
             margin: 40px auto;
             padding: 0 30px;
         }
 
-        /* ===== HERO SECTION ===== */
         .hero-section {
             margin-bottom: 80px;
         }
@@ -797,7 +791,6 @@
             }
         }
 
-        /* ===== SCROLLBAR ===== */
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -817,10 +810,10 @@
     </style>
 </head>
 <body>
-    <!-- Matrix Background -->
+    
     <div class="matrix-bg" id="matrixBg"></div>
     
-    <!-- Terminal Header -->
+    
     <header class="terminal-header">
         <div class="terminal-line">
             <span class="prompt">root@zmax:~$</span>
@@ -844,9 +837,9 @@
         </div>
     </nav>
 
-    <!-- Main Container -->
+    
     <main class="container">
-        <!-- Hero Section -->
+        
         <section id="home" class="hero-section">
             <div class="hero-grid">
                 <div class="hero-text">
@@ -877,7 +870,6 @@
                 </div>
                 <div class="hero-image">
                     <div class="image-frame">
-                        <!-- YOUR PROFILE IMAGE HERE -->
                         <img src="1000215832.jpg" alt="ZMAX - IYAD" class="profile-img">
                         <div class="image-overlay">
                             <div class="status-indicator">
@@ -1169,7 +1161,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <h2 class="section-title">
                 <i class="fas fa-satellite-dish"></i>
@@ -1193,7 +1184,7 @@
                             </div>
                         </a>
                         
-                        <a href="https://wa.me/201121018575" target="_blank" class="contact-method">
+                        <a href="https://wa.me/201282054218" target="_blank" class="contact-method">
                             <div class="method-icon">
                                 <i class="fab fa-whatsapp"></i>
                             </div>
@@ -1223,13 +1214,13 @@
                             </div>
                         </a>
                         
-                        <a href="https://www.facebook.com/share/1BfS6EsH7e/" target="_blank" class="contact-method">
+                        <a href="https://www.facebook.com/share/19rUCMsuXw/" target="_blank" class="contact-method">
                             <div class="method-icon">
                                 <i class="fab fa-facebook"></i>
                             </div>
                             <div class="method-details">
                                 <div class="method-title">فيسبوك</div>
-                                <div class="method-value">ZMAX التقنية</div>
+                                <div class="method-value">ZMAX </div>
                             </div>
                         </a>
                         
@@ -1285,10 +1276,10 @@
                                 > <br>
                                 > Available communication methods:<br>
                                 > • EMAIL: laayad69@gmail.com<br>
-                                > • WHATSAPP: +201121018575<br>
+                                > • WHATSAPP: +201282054218<br>
                                 > • TELEGRAM: @ZMAX3<br>
                                 > • TELEGRAM CHANNEL: @cleanmind_1<br>
-                                > • FACEBOOK: ZMAX التقنية<br>
+                                > • FACEBOOK: ZMAX <br>
                                 > • INSTAGRAM: @zmax__1<br>
                                 > • TIKTOK: @zmax__1<br>
                                 > • GITHUB: laayad69-art<br>
@@ -1306,7 +1297,7 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    
     <footer class="cyber-footer">
         <div class="footer-content">
             <div class="footer-logo">
@@ -1334,9 +1325,6 @@
     </footer>
 
     <script>
-        // ===== JAVASCRIPT FUNCTIONS =====
-        
-        // Matrix Background Effect
         function createMatrixEffect() {
             const bg = document.getElementById('matrixBg');
             const chars = "01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン";
@@ -1355,7 +1343,7 @@
                 bg.appendChild(span);
             }
             
-            // Add animation to CSS
+        
             const style = document.createElement('style');
             style.textContent = `
                 @keyframes matrixFall {
@@ -1372,7 +1360,7 @@
             document.head.appendChild(style);
         }
         
-        // Terminal Typing Effect
+    
         function terminalTyping() {
             const texts = [
                 "IYΔD::ROOT | System Owner | ZMAX Portfolio v2.0",
@@ -1404,7 +1392,7 @@
             type();
         }
         
-        // Scroll to Section
+
         function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
             if (section) {
@@ -1412,24 +1400,23 @@
             }
         }
         
-        // Scroll to Top
+    
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
         
-        // Show Code Link Alert
+
         function showCodeLink(projectName) {
             alert(`🔐 رابط الكود المصدري لـ "${projectName}" سيتم إضافته قريباً`);
             return false;
         }
         
-        // Show GitHub Alert
+
         function showGitHubAlert() {
             alert(`🐙 GitHub Profile: laayad69-art`);
             return false;
         }
-        
-        // Skill Bars Animation on Scroll
+    
         function animateSkillBars() {
             const skillBars = document.querySelectorAll('.skill-level');
             skillBars.forEach(bar => {
@@ -1441,7 +1428,6 @@
             });
         }
         
-        // Navigation Active Link
         function updateActiveNav() {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.nav-link');
@@ -1463,16 +1449,15 @@
             });
         }
         
-        // Initialize everything when page loads
         document.addEventListener('DOMContentLoaded', function() {
-            // Start effects
+            
             createMatrixEffect();
             terminalTyping();
             
-            // Add scroll event listener
+    
             window.addEventListener('scroll', updateActiveNav);
             
-            // Animate skill bars when they come into view
+            
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -1487,7 +1472,7 @@
                 observer.observe(skillsSection);
             }
             
-            // Add click events to all project cards
+            
             document.querySelectorAll('.project-card').forEach(card => {
                 card.addEventListener('click', function(e) {
                     if (!e.target.closest('.project-link')) {
@@ -1499,32 +1484,31 @@
                 });
             });
             
-            // Console welcome message
+            
             console.log('%c🔐 ZMAX PORTFOLIO v2.0 🔐', 'color: #00ff9d; font-size: 20px; font-weight: bold;');
             console.log('%cWelcome to the cyber domain of IYΔD::ROOT', 'color: #00eeff; font-size: 14px;');
             console.log('%cSystem Status: ONLINE', 'color: #27ca3f;');
         });
         
-        // Add keyboard shortcuts
+        
         document.addEventListener('keydown', function(e) {
-            // Ctrl + / for help
+            
             if (e.ctrlKey && e.key === '/') {
                 e.preventDefault();
                 alert(`🎮 Keyboard Shortcuts:\n\n• ESC - Reset view\n• 1 - Home\n• 2 - Skills\n• 3 - Projects\n• 4 - Contact\n• 0 - Scroll to top`);
             }
             
-            // Number keys for navigation
+            
             if (e.key >= '1' && e.key <= '4') {
                 const sections = ['home', 'skills', 'projects', 'contact'];
                 scrollToSection(sections[parseInt(e.key) - 1]);
             }
             
-            // 0 for top
+            
             if (e.key === '0') {
                 scrollToTop();
             }
             
-            // ESC for reset
             if (e.key === 'Escape') {
                 document.querySelectorAll('.project-card').forEach(card => {
                     card.style.transform = '';
@@ -1532,7 +1516,6 @@
             }
         });
         
-        // Add terminal cursor blink
         setInterval(() => {
             const cursor = document.querySelector('.cursor');
             if (cursor) {
